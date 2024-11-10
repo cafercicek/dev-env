@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  ubuntu-custom:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ubuntu-custom
+    volumes:
+      - ./dockerVol/:/home/ubuntu/HostVol
+    stdin_open: true
+    tty: true

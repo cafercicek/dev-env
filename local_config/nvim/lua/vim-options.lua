@@ -1,0 +1,10 @@
+--vim.cmd("set expandtab")
+--vim.cmd("set tabstop=2")
+--vim.cmd("set softtabstop=2")
+--vim.cmd("set shiftwidth=2")
+vim.cmd("inoremap jj <esc>")
+--vim.cmd("tnoremap <Esc> <C-\><C-n>")
+vim.cmd("set clipboard=unnamedplus")
+--vim.cmd("set mouse=a")
+vim.cmd("set number")
+vim.g.mapleader = " "
