@@ -43,3 +43,12 @@ vim.keymap.set('n', '<leader><CR>', function()
 end, { noremap = true, silent = true })
 
 vim.keymap.set('n', '<leader>cr', ':%s/\\r//g<CR>', { noremap = true, silent = true })
+
+
+---- set filetype=just for justfile
+--vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+--	pattern = "justfile",
+--	callback = function()
+--		vim.cmd("set filetype=just")
+--	end,
+--})
